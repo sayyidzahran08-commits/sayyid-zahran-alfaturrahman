@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penjualan Motor - Toko Motor Online</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        nav {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin: 0 20px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        nav a:hover {
+            background-color: #007bff;
+            color: white;
+            transform: scale(1.05);
+        }
+        section {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        #motor {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        #motor div {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fafafa;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        #motor div:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        #motor img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .social-media {
+            margin-top: 10px;
+        }
+        .social-media a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-media a:hover {
+            color: #007bff;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Toko Motor sayyid</h1>
+        <p>Tempat terbaik untuk membeli motor impian Anda!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#motor">Daftar Motor</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Tentang Kami</h2>
+        <p>Kami menyediakan berbagai jenis motor berkualitas tinggi dengan harga terjangkau. Pilih motor favorit Anda dan pesan sekarang!</p>
+    </section>
+
+    <section id="motor">
+        <h2>Daftar Motor Tersedia</h2>
+        <div>
+            <h3>Motor Sport - Honda CBR 150R</h3>
+            <img src="https://image2url.com/images/1765421108980-689f4c2b-a75b-4565-b9fa-62215b679019.webp" alt="Honda CBR 150R">
+            <p>Harga: Rp 35.000.000</p>
+            <p>Deskripsi: Motor sport cepat dan stylish untuk pengendara berpengalaman.</p>
+            <button>Beli Sekarang</button>
+        </div>
+        <div>
+            <h3>Motor Matic - Yamaha NMAX</h3>
+            <img src="https://image2url.com/images/1765420971601-64a6c8d3-a3dd-4f76-bdfc-7c628bc4c65d.jpg" alt="Yamaha NMAX">
+            <p>Harga: Rp 28.000.000</p>
+            <p>Deskripsi: Motor matic nyaman untuk perjalanan sehari-hari.</p>
+            <button>Beli Sekarang</button>
+        </div>
+        <div>
+            <h3>Motor Bebek - Honda Supra X 125</h3>
+            <img src="https://image2url.com/images/1765421063683-5428ff04-973a-4aa5-994d-fdec72c82257.webp" alt="Honda Supra X 125">
+            <p>Harga: Rp 18.000.000</p>
+            <p>Deskripsi: Motor klasik yang irit bahan bakar dan mudah perawatan.</p>
+            <button>Beli Sekarang</button>
+        </div>
+    </section>
+
+    <section id="kontak">
+        <h2>Hubungi Kami</h2>
+        <p>Email: info@tokomotor.com</p>
+        <p>Telepon: 0812-3456-7890</p>
+        <p>Alamat: Jl. Motor Raya No. 123, Jakarta</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Toko Motor sayyid. Semua hak dilindungi.</p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/yourpage" title="Instagram">📷 IG</a>
+            <a href="https://www.tiktok.com/@yourpage" title="TikTok">🎵 TikTok</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
